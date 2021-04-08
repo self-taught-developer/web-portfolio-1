@@ -1,0 +1,382 @@
+/* 
+CSS Table
+==============
+1. Base CSS
+2. Header Area CSS
+3. Welcome Area CSS
+4. Biography Area CSS
+5. Latest Work CSS
+6. Testimonial CSS
+7. Footer CSS
+*/
+
+/*------Start Base CSS------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #777;
+}
+
+.fix:before,
+.fix:after {
+    content: "";
+    display: table;
+}
+
+.fix:after {
+    clear: both;
+}
+
+.section-padding {
+    padding: 100px 0 50px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 48%;
+    margin: 0 1%;
+    float: left;
+}
+
+.pdt-50 {
+    padding-top: 50px;
+}
+
+.boxed-btn {
+    background-color: #ec4f91;
+    display: inline-block;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.boxed-btn:hover {
+    background-color: #f5a931;
+}
+
+/*------End Base CSS------*/
+
+
+/* ------ Header Area CSS Start ------ */
+.header-left {
+    float: left;
+    width: 30%;
+}
+
+.header-right {
+    float: left;
+    width: 70%;
+    text-align: right;
+}
+
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mainmenu li {
+    display: inline-block;
+}
+
+.mainmenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.mainmenu li a:hover {
+    color: #f5a931;
+}
+
+.logo a {
+    /* color: linear-gradient(#ec5196, #ed4b70); */
+    background: -webkit-linear-gradient(45deg, #ec5196, #f5a931);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.header-area {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    padding: 20px 0;
+}
+
+.header-area .section-padding {
+    padding: 0;
+}
+
+/* ------ Header Area CSS End ------ */
+
+/* ------ Welcome Area CSS ------ */
+.welcome-area {
+    background-image: url("assets/img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.welcome-area h1 {
+    font-size: 70px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.welcome-area .text-highlight {
+    font-weight: 700;
+    display: block;
+    color: #ec4f8e;
+}
+
+/* ------ Welcome Area CSS End------ */
+
+/* ------ Biography CSS Start ------ */
+.biography-area {
+    background-image: url("assets/img/biography-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.biography-area .biography-left {
+
+    width: 40%;
+    margin-right: 9%;
+}
+
+.biography-area .biography-right {
+    margin-top: 100px;
+}
+
+.biography-right h1 {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ------ Biography CSS End ------ */
+
+/* ------ Latest Work CSS Start ------ */
+.latest-work-area {
+    background-image: url("assets/img/latest-work-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-title {
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.latest-work-area {
+    background-image: url("assets/img/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.single-work-item {
+    width: 31.334%;
+    float: left;
+    margin: 1%;
+    box-shadow: 0 0 20px #ddd;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.single-work-item img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.single-work-item:hover img {
+    opacity: .7;
+    cursor: pointer;
+}
+
+/* ------ Latest Work CSS End ------ */
+
+/* ------ Testimonial CSS Start ------ */
+.testimonial-area {
+    background-image: url("assets/img/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.testimonial-box {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.testimonial-area h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.testimonial-area h4 {
+    font-size: 20px;
+    color: #666;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.testimonial-area h4 span {
+    display: block;
+    font-size: 65%;
+    opacity: .5;
+}
+
+.message-box {
+    background-image: linear-gradient(#ec5196, #ed4b70);
+    display: inline-block;
+    padding: 30px 100px;
+    margin-top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+}
+
+.message-box a {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.message-box a:hover {
+    opacity: .7;
+}
+
+/* ------ Testimonial CSS End ------ */
+
+/* ------ Footer CSS Start ------- */
+.footer-area {
+    text-align: center;
+    color: #777;
+    padding: 15px 0;
+}
+
+.footer-area a {
+    color: #fac933;
+}
+
+.social-area {
+    margin-bottom: 20px;
+}
+
+.social-area a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.social-area a:hover {
+    opacity: .7;
+}
+
+.facebook {
+    background-color: #4267b2;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}
+
+.instagram {
+    background-color: tomato;
+}
+
+/* ------ Footer CSS End ------- */

@@ -1,0 +1,95 @@
+/*	Medium Layout: 1280px	*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .section-padding {
+    width: 970px;
+  }
+
+  .mainmenu li a {
+    padding: 10px 15px;
+  }
+}
+
+/*		Tablet Layout: 768px.       */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-right {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*		Tablet and Mobile Layout         */
+@media only screen and (max-width: 991px) {
+  .header-area {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .header-left {
+    float: none;
+    text-align: center;
+    width: auto;
+  }
+
+  .single-work-item {
+    width: 70%;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-box {
+    max-width: initial;
+  }
+
+  .section-padding {
+    padding: 50px 15px;
+    width: auto;
+  }
+
+  .welcome-area {
+    padding-top: 0;
+  }
+
+  .welcome-area h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-area h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .testimonial-area {
+    margin: 0;
+  }
+}
+
+/*		Mobile Layout: 320px.         */
+@media only screen and (max-width: 767px) {
+  .header-right {
+    float: none;
+    text-align: center;
+    width: auto;
+  }
+
+  .half-width {
+    width: auto;
+    float: none;
+    margin: 0;
+  }
+  .biography-area .section-padding {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .biography-area .biography-right {
+    margin-top: 0;
+  }
+  .biography-area .biography-left {
+    width: 100%;
+  }
+}
+
+/*		Wide Mobile Layout: 480px.        */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
